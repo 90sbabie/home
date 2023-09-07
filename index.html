@@ -3,8 +3,56 @@
 <body>
 
 <style> 
-h1 {
-  margin-top: 400px;
+  #target{
+    position:absolute;
+    top:-3500px;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    font-size:30px;
+    text-align:center;
+    font-family:sans-serif;
+}
+#target>div{
+    padding-top:3500px;
+    animation:autoscroll 1000s linear;
+}
+html:after{
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0) 100%);
+    background:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0) 100%);
+    pointer-events:none;
+}
+
+body{
+    
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    transform-origin:50% 100%;
+    transform:perspective(300px) rotateX(20deg);
+}
+}
+@keyframes autoscroll{
+    to{
+        margin-top:-50000px;
+    }    
+}
+
+
+
+
+
+Resourcesh1 {
+}  margin-top: 400px;
   margin-bottom: 200px;
   text-align: center;
   font-family: sans-serif;
@@ -24,182 +72,13 @@ h1 {
                -36px 36px #ff5722;
 } 
 
-     body{
-       Crazy CSS Shooting Star Background:
-Delroy Prithvi
-
-<style>
-{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-}
-body{
-    overflow: hidden;
-}
-section{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    /* https://lh3.googleusercontent.com/ka_5IYJDRkXZnbptxq64LPuggGL5FM8gnpJlsuSiOQh4b39kMkiRbVfX8iK8bjMg5SLkdfoix09P60wyFjN2=w681-h614 */
-    background-color:blue;
-    background-size: cover;
-    animation: animateBg 50s linear infinite;
-}
-
-@keyframes animateBg{
-    0%,100%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-}
-
-span{
-    position: absolute;
-    top:50%;
-    left:50%;
-    width: 4px;
-    height: 4px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
-    animation: animate 3s linear infinite;
-}
-span::before{
-    content:'';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 300px;
-    height: 1px;
-    background: linear-gradient(90deg,#fff,transparent);
-}
-@keyframes animate
-{
-    0%
-    {
-        transform: rotate(315deg) translateX(0);
-        opacity: 1;
-    }
-    70%
-    {
-        opacity: 1;
-    }
-    100%
-    {
-        transform: rotate(315deg) translateX(-1000px);
-        opacity: 0;
-    }
-}
-span:nth-child(1){
-    top: 0;
-    right: 0;
-    left: initial;
-    animation-delay: 0s;
-    animation-duration: 1s;
-}
-span:nth-child(2){
-    top: 0;
-    right: 80px;
-    left: initial;
-    animation-delay: 0.2s;
-    animation-duration: 3s;
-}
-span:nth-child(3){
-    top: 80;
-    right: 0px;
-    left: initial;
-    animation-delay: 0.4s;
-    animation-duration: 2s;
-}
-span:nth-child(4){
-    top: 0;
-    right: 180px;
-    left: initial;
-    animation-delay: 0.6s;
-    animation-duration: 1.5s;
-}
-span:nth-child(5){
-    top: 0;
-    right: 400px;
-    left: initial;
-    animation-delay: 0.8s;
-    animation-duration: 2.5s;
-}
-span:nth-child(6){
-    top: 0;
-    right: 600px;
-    left: initial;
-    animation-delay: 1s;
-    animation-duration: 3s;
-}
-span:nth-child(7){
-    top: 300px;
-    right: 0px;
-    left: initial;
-    animation-delay: 1.2s;
-    animation-duration: 1.75s;
-}
-span:nth-child(8){
-    top: 0px;
-    right: 700px;
-    left: initial;
-    animation-delay: 1.4s;
-    animation-duration: 1.25s;
-}
-span:nth-child(9){
-    top: 0px;
-    right: 1000px;
-    left: initial;
-    animation-delay: 0.75s;
-    animation-duration: 2.25s;
-}
-span:nth-child(9){
-    top: 0px;
-    right: 450px;
-    left: initial;
-    animation-delay: 2.75s;
-    animation-duration: 2.75s;
-}
-</style>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pure CSS Shooting Star Animation Effect</title>
-   
-</head>
-     <a href="https://90sbabie.github.io/home/index.html"><img src="https://90sbabie.github.io/home/images/carebearstar.png" width="105" 
-     height="105"></a></html>
-<body>
-        <section>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </section>
-</body>
-            backgroud-image:url("90sbabie.github.io/home/images/netart.gif");
-         backgroud-size: cover;
-      }
+    
 
 </style>
 <body>
-<h1>
-Welcome to Laurel's first webpage
+  <div id="target"><div>
+    <h1>
+  Welcome to Laurel's first webpage
 <br><br><br><br><br><br><br><br><br><br><br><br>
 
 
@@ -230,5 +109,5 @@ use the star to navigate to a new discovery.
 <a href="https://90sbabie.github.io/home/secondpage.html"><img src="https://90sbabie.github.io/home/images/carebearstar.png" width="105" 
      height="105"> </a>
 </h1>
-</body>
+  </div></body>
 </html></p> 
